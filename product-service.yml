@@ -2,16 +2,15 @@ spring:
 
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/product_service
-    username: admin
-    password: admin
-    driver-class-name: org.postgresql.Driver
-
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    show-sql: true
+    url: jdbc:mysql://localhost:3306/productdb
+    username: root
+    password: toor
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: update
 
 server:
   port: 7001
